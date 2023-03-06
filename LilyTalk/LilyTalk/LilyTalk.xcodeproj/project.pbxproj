@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AFC920C29B5F78D003A35CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC920B29B5F78D003A35CE /* AppDelegate.swift */; };
-		2AFC920E29B5F78D003A35CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC920D29B5F78D003A35CE /* SceneDelegate.swift */; };
-		2AFC921029B5F78D003A35CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC920F29B5F78D003A35CE /* ViewController.swift */; };
-		2AFC921329B5F78D003A35CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC921129B5F78D003A35CE /* Main.storyboard */; };
-		2AFC921529B5F78F003A35CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC921429B5F78F003A35CE /* Assets.xcassets */; };
-		2AFC921829B5F78F003A35CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC921629B5F78F003A35CE /* LaunchScreen.storyboard */; };
+		2AFC922C29B5F828003A35CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC922B29B5F828003A35CE /* AppDelegate.swift */; };
+		2AFC922E29B5F828003A35CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC922D29B5F828003A35CE /* SceneDelegate.swift */; };
+		2AFC923029B5F828003A35CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC922F29B5F828003A35CE /* ViewController.swift */; };
+		2AFC923329B5F829003A35CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC923129B5F829003A35CE /* Main.storyboard */; };
+		2AFC923529B5F82A003A35CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC923429B5F82A003A35CE /* Assets.xcassets */; };
+		2AFC923829B5F82A003A35CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC923629B5F82A003A35CE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2AFC920829B5F78D003A35CE /* LilyTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LilyTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AFC920B29B5F78D003A35CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2AFC920D29B5F78D003A35CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2AFC920F29B5F78D003A35CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2AFC921229B5F78D003A35CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2AFC921429B5F78F003A35CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2AFC921729B5F78F003A35CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2AFC921929B5F78F003A35CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AFC922829B5F828003A35CE /* LilyTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LilyTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AFC922B29B5F828003A35CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AFC922D29B5F828003A35CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2AFC922F29B5F828003A35CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2AFC923229B5F829003A35CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AFC923429B5F82A003A35CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AFC923729B5F82A003A35CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2AFC923929B5F82A003A35CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2AFC920529B5F78D003A35CE /* Frameworks */ = {
+		2AFC922529B5F828003A35CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2AFC91FF29B5F78D003A35CE = {
+		2AFC921F29B5F828003A35CE = {
 			isa = PBXGroup;
 			children = (
-				2AFC920A29B5F78D003A35CE /* LilyTalk */,
-				2AFC920929B5F78D003A35CE /* Products */,
+				2AFC922A29B5F828003A35CE /* LilyTalk */,
+				2AFC922929B5F828003A35CE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2AFC920929B5F78D003A35CE /* Products */ = {
+		2AFC922929B5F828003A35CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AFC920829B5F78D003A35CE /* LilyTalk.app */,
+				2AFC922829B5F828003A35CE /* LilyTalk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2AFC920A29B5F78D003A35CE /* LilyTalk */ = {
+		2AFC922A29B5F828003A35CE /* LilyTalk */ = {
 			isa = PBXGroup;
 			children = (
-				2AFC920B29B5F78D003A35CE /* AppDelegate.swift */,
-				2AFC920D29B5F78D003A35CE /* SceneDelegate.swift */,
-				2AFC920F29B5F78D003A35CE /* ViewController.swift */,
-				2AFC921129B5F78D003A35CE /* Main.storyboard */,
-				2AFC921429B5F78F003A35CE /* Assets.xcassets */,
-				2AFC921629B5F78F003A35CE /* LaunchScreen.storyboard */,
-				2AFC921929B5F78F003A35CE /* Info.plist */,
+				2AFC922B29B5F828003A35CE /* AppDelegate.swift */,
+				2AFC922D29B5F828003A35CE /* SceneDelegate.swift */,
+				2AFC922F29B5F828003A35CE /* ViewController.swift */,
+				2AFC923129B5F829003A35CE /* Main.storyboard */,
+				2AFC923429B5F82A003A35CE /* Assets.xcassets */,
+				2AFC923629B5F82A003A35CE /* LaunchScreen.storyboard */,
+				2AFC923929B5F82A003A35CE /* Info.plist */,
 			);
 			path = LilyTalk;
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AFC920729B5F78D003A35CE /* LilyTalk */ = {
+		2AFC922729B5F828003A35CE /* LilyTalk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AFC921C29B5F78F003A35CE /* Build configuration list for PBXNativeTarget "LilyTalk" */;
+			buildConfigurationList = 2AFC923C29B5F82A003A35CE /* Build configuration list for PBXNativeTarget "LilyTalk" */;
 			buildPhases = (
-				2AFC920429B5F78D003A35CE /* Sources */,
-				2AFC920529B5F78D003A35CE /* Frameworks */,
-				2AFC920629B5F78D003A35CE /* Resources */,
+				2AFC922429B5F828003A35CE /* Sources */,
+				2AFC922529B5F828003A35CE /* Frameworks */,
+				2AFC922629B5F828003A35CE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = LilyTalk;
 			productName = LilyTalk;
-			productReference = 2AFC920829B5F78D003A35CE /* LilyTalk.app */;
+			productReference = 2AFC922829B5F828003A35CE /* LilyTalk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2AFC920029B5F78D003A35CE /* Project object */ = {
+		2AFC922029B5F828003A35CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					2AFC920729B5F78D003A35CE = {
+					2AFC922729B5F828003A35CE = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 2AFC920329B5F78D003A35CE /* Build configuration list for PBXProject "LilyTalk" */;
+			buildConfigurationList = 2AFC922329B5F828003A35CE /* Build configuration list for PBXProject "LilyTalk" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 2AFC91FF29B5F78D003A35CE;
-			productRefGroup = 2AFC920929B5F78D003A35CE /* Products */;
+			mainGroup = 2AFC921F29B5F828003A35CE;
+			productRefGroup = 2AFC922929B5F828003A35CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AFC920729B5F78D003A35CE /* LilyTalk */,
+				2AFC922729B5F828003A35CE /* LilyTalk */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2AFC920629B5F78D003A35CE /* Resources */ = {
+		2AFC922629B5F828003A35CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AFC921829B5F78F003A35CE /* LaunchScreen.storyboard in Resources */,
-				2AFC921529B5F78F003A35CE /* Assets.xcassets in Resources */,
-				2AFC921329B5F78D003A35CE /* Main.storyboard in Resources */,
+				2AFC923829B5F82A003A35CE /* LaunchScreen.storyboard in Resources */,
+				2AFC923529B5F82A003A35CE /* Assets.xcassets in Resources */,
+				2AFC923329B5F829003A35CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2AFC920429B5F78D003A35CE /* Sources */ = {
+		2AFC922429B5F828003A35CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AFC921029B5F78D003A35CE /* ViewController.swift in Sources */,
-				2AFC920C29B5F78D003A35CE /* AppDelegate.swift in Sources */,
-				2AFC920E29B5F78D003A35CE /* SceneDelegate.swift in Sources */,
+				2AFC923029B5F828003A35CE /* ViewController.swift in Sources */,
+				2AFC922C29B5F828003A35CE /* AppDelegate.swift in Sources */,
+				2AFC922E29B5F828003A35CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2AFC921129B5F78D003A35CE /* Main.storyboard */ = {
+		2AFC923129B5F829003A35CE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2AFC921229B5F78D003A35CE /* Base */,
+				2AFC923229B5F829003A35CE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2AFC921629B5F78F003A35CE /* LaunchScreen.storyboard */ = {
+		2AFC923629B5F82A003A35CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2AFC921729B5F78F003A35CE /* Base */,
+				2AFC923729B5F82A003A35CE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2AFC921A29B5F78F003A35CE /* Debug */ = {
+		2AFC923A29B5F82A003A35CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		2AFC921B29B5F78F003A35CE /* Release */ = {
+		2AFC923B29B5F82A003A35CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +280,7 @@
 			};
 			name = Release;
 		};
-		2AFC921D29B5F78F003A35CE /* Debug */ = {
+		2AFC923D29B5F82A003A35CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -308,7 +308,7 @@
 			};
 			name = Debug;
 		};
-		2AFC921E29B5F78F003A35CE /* Release */ = {
+		2AFC923E29B5F82A003A35CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -339,25 +339,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AFC920329B5F78D003A35CE /* Build configuration list for PBXProject "LilyTalk" */ = {
+		2AFC922329B5F828003A35CE /* Build configuration list for PBXProject "LilyTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AFC921A29B5F78F003A35CE /* Debug */,
-				2AFC921B29B5F78F003A35CE /* Release */,
+				2AFC923A29B5F82A003A35CE /* Debug */,
+				2AFC923B29B5F82A003A35CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AFC921C29B5F78F003A35CE /* Build configuration list for PBXNativeTarget "LilyTalk" */ = {
+		2AFC923C29B5F82A003A35CE /* Build configuration list for PBXNativeTarget "LilyTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AFC921D29B5F78F003A35CE /* Debug */,
-				2AFC921E29B5F78F003A35CE /* Release */,
+				2AFC923D29B5F82A003A35CE /* Debug */,
+				2AFC923E29B5F82A003A35CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2AFC920029B5F78D003A35CE /* Project object */;
+	rootObject = 2AFC922029B5F828003A35CE /* Project object */;
 }
