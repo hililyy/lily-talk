@@ -55,6 +55,9 @@ class ViewController: UIViewController {
                 exit(0)
             }))
             self.present(alert, animated: true)
+        } else {
+            let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            self.present(loginVC, animated: false)
         }
         self.view.backgroundColor = UIColor(hex: color!)
     }

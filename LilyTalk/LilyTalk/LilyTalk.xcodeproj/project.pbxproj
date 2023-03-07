@@ -10,6 +10,7 @@
 		14D1983453206BA4FA80CDBB /* Pods_LilyTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D044288C1AA1A7A382949C /* Pods_LilyTalk.framework */; };
 		2A33EAB229B748AA0043DAF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A33EAB129B748AA0043DAF2 /* GoogleService-Info.plist */; };
 		2A33EAB629B7B4E60043DAF2 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A33EAB529B7B4E60043DAF2 /* RemoteConfigDefaults.plist */; };
+		2A33EAB829B7B83D0043DAF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33EAB729B7B83D0043DAF2 /* LoginViewController.swift */; };
 		2AFC922C29B5F828003A35CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC922B29B5F828003A35CE /* AppDelegate.swift */; };
 		2AFC922E29B5F828003A35CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC922D29B5F828003A35CE /* SceneDelegate.swift */; };
 		2AFC923029B5F828003A35CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC922F29B5F828003A35CE /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		1848C93D3C764D118D4A21B3 /* Pods-LilyTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LilyTalk.release.xcconfig"; path = "Target Support Files/Pods-LilyTalk/Pods-LilyTalk.release.xcconfig"; sourceTree = "<group>"; };
 		2A33EAB129B748AA0043DAF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A33EAB529B7B4E60043DAF2 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		2A33EAB729B7B83D0043DAF2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2AFC922829B5F828003A35CE /* LilyTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LilyTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFC922B29B5F828003A35CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AFC922D29B5F828003A35CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				2AFC922D29B5F828003A35CE /* SceneDelegate.swift */,
 				2AFC922F29B5F828003A35CE /* ViewController.swift */,
 				2AFC923129B5F829003A35CE /* Main.storyboard */,
+				2A33EAB729B7B83D0043DAF2 /* LoginViewController.swift */,
 				2AFC923429B5F82A003A35CE /* Assets.xcassets */,
 				2AFC923629B5F82A003A35CE /* LaunchScreen.storyboard */,
 				2A33EAB129B748AA0043DAF2 /* GoogleService-Info.plist */,
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A33EAB829B7B83D0043DAF2 /* LoginViewController.swift in Sources */,
 				2AFC923029B5F828003A35CE /* ViewController.swift in Sources */,
 				2AFC922C29B5F828003A35CE /* AppDelegate.swift in Sources */,
 				2AFC922E29B5F828003A35CE /* SceneDelegate.swift in Sources */,
