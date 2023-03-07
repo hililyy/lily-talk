@@ -82,7 +82,7 @@
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Sing in"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sing up"/>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -104,20 +104,130 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="MVn-h8-jrj" id="gP4-sG-jGu"/>
-                        <outlet property="signInBtn" destination="vI1-ng-LWB" id="JVD-Ag-DwP"/>
+                        <outlet property="signupBtn" destination="vI1-ng-LWB" id="hoY-by-1M6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNc-Oe-87g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="790" y="-2"/>
         </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="EAY-U4-qTQ">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" id="y5F-l8-Qtw" customClass="SignupViewController" customModule="LilyTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6jc-EG-hk2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Pym-43-g8a">
+                                <rect key="frame" x="20" y="259" width="353" height="301"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uyp-YU-2Iv" customClass="JiroTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Got-Wc-NfL"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Soe-5G-Dlx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" systemColor="systemRedColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" systemColor="opaqueSeparatorColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cw5-f8-ani" customClass="JiroTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="64" width="353" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="P4B-4r-GgN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" systemColor="systemRedColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" systemColor="opaqueSeparatorColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Tt-jt-nHC" customClass="JiroTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="128" width="353" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="2Cc-Cw-1jX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" systemColor="systemRedColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" systemColor="opaqueSeparatorColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCH-dn-jke">
+                                        <rect key="frame" x="0.0" y="192" width="353" height="45"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="회원가입"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exC-oo-vTV">
+                                        <rect key="frame" x="0.0" y="256" width="353" height="45"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8Tt-jt-nHC" firstAttribute="height" secondItem="Uyp-YU-2Iv" secondAttribute="height" id="Wam-Co-gFz"/>
+                                    <constraint firstItem="exC-oo-vTV" firstAttribute="height" secondItem="Uyp-YU-2Iv" secondAttribute="height" id="fit-8X-EXa"/>
+                                    <constraint firstItem="cw5-f8-ani" firstAttribute="height" secondItem="Uyp-YU-2Iv" secondAttribute="height" id="nIS-EW-lQz"/>
+                                    <constraint firstItem="hCH-dn-jke" firstAttribute="height" secondItem="Uyp-YU-2Iv" secondAttribute="height" id="oHP-AA-We9"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ses-M6-Sa6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pym-43-g8a" firstAttribute="centerX" secondItem="6jc-EG-hk2" secondAttribute="centerX" id="Y3N-nb-aXt"/>
+                            <constraint firstItem="Pym-43-g8a" firstAttribute="top" secondItem="Ses-M6-Sa6" secondAttribute="top" constant="200" id="i8S-NH-Tlp"/>
+                            <constraint firstItem="Pym-43-g8a" firstAttribute="leading" secondItem="Ses-M6-Sa6" secondAttribute="leading" constant="20" id="oWH-Ad-evh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelBtn" destination="exC-oo-vTV" id="JeI-f5-zoh"/>
+                        <outlet property="email" destination="Uyp-YU-2Iv" id="JuK-f3-alV"/>
+                        <outlet property="name" destination="cw5-f8-ani" id="MfZ-5g-TMC"/>
+                        <outlet property="password" destination="8Tt-jt-nHC" id="EQk-ja-Bfg"/>
+                        <outlet property="signupBtn" destination="hCH-dn-jke" id="sVj-wy-gSV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mcq-p3-hCu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1486" y="-2"/>
+        </scene>
     </scenes>
     <designables>
+        <designable name="8Tt-jt-nHC">
+            <size key="intrinsicContentSize" width="108" height="34"/>
+        </designable>
         <designable name="RjK-p2-V7p">
-            <size key="intrinsicContentSize" width="59.666666666666664" height="34"/>
+            <size key="intrinsicContentSize" width="73.666666666666671" height="34"/>
+        </designable>
+        <designable name="Uyp-YU-2Iv">
+            <size key="intrinsicContentSize" width="73.666666666666671" height="34"/>
+        </designable>
+        <designable name="cw5-f8-ani">
+            <size key="intrinsicContentSize" width="77" height="34"/>
         </designable>
         <designable name="t2M-Ah-qs3">
-            <size key="intrinsicContentSize" width="94" height="34"/>
+            <size key="intrinsicContentSize" width="108" height="34"/>
         </designable>
     </designables>
     <resources>
