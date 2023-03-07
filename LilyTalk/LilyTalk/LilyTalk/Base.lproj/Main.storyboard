@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Pym-43-g8a">
-                                <rect key="frame" x="20" y="259" width="353" height="301"/>
+                                <rect key="frame" x="20" y="269" width="353" height="301"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uyp-YU-2Iv" customClass="JiroTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="45"/>
@@ -191,18 +191,28 @@
                                     <constraint firstItem="hCH-dn-jke" firstAttribute="height" secondItem="Uyp-YU-2Iv" secondAttribute="height" id="oHP-AA-We9"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_addPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="FOR-aP-RjO">
+                                <rect key="frame" x="146.66666666666666" y="149" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DoG-QS-pO8"/>
+                                    <constraint firstAttribute="height" constant="100" id="oYs-Df-TWe"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ses-M6-Sa6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FOR-aP-RjO" firstAttribute="centerX" secondItem="6jc-EG-hk2" secondAttribute="centerX" id="Fy4-c5-BQW"/>
+                            <constraint firstItem="Pym-43-g8a" firstAttribute="top" secondItem="FOR-aP-RjO" secondAttribute="bottom" constant="20" id="Joc-6a-Xzf"/>
+                            <constraint firstItem="FOR-aP-RjO" firstAttribute="top" secondItem="Ses-M6-Sa6" secondAttribute="top" constant="90" id="Ter-qD-vK9"/>
                             <constraint firstItem="Pym-43-g8a" firstAttribute="centerX" secondItem="6jc-EG-hk2" secondAttribute="centerX" id="Y3N-nb-aXt"/>
-                            <constraint firstItem="Pym-43-g8a" firstAttribute="top" secondItem="Ses-M6-Sa6" secondAttribute="top" constant="200" id="i8S-NH-Tlp"/>
                             <constraint firstItem="Pym-43-g8a" firstAttribute="leading" secondItem="Ses-M6-Sa6" secondAttribute="leading" constant="20" id="oWH-Ad-evh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cancelBtn" destination="exC-oo-vTV" id="JeI-f5-zoh"/>
                         <outlet property="email" destination="Uyp-YU-2Iv" id="JuK-f3-alV"/>
+                        <outlet property="imageView" destination="FOR-aP-RjO" id="foU-dX-hA4"/>
                         <outlet property="name" destination="cw5-f8-ani" id="MfZ-5g-TMC"/>
                         <outlet property="password" destination="8Tt-jt-nHC" id="EQk-ja-Bfg"/>
                         <outlet property="signupBtn" destination="hCH-dn-jke" id="sVj-wy-gSV"/>
@@ -231,6 +241,7 @@
         </designable>
     </designables>
     <resources>
+        <image name="ic_addPhoto" width="16" height="16"/>
         <image name="ic_loading" width="512" height="512"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
