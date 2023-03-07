@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="85" y="-2"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Item-->
         <scene sceneID="7fm-WX-RID">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="Rf6-w0-dPA" customClass="LoginViewController" customModule="LilyTalk" customModuleProvider="target" sceneMemberID="viewController">
@@ -102,6 +102,7 @@
                             <constraint firstItem="dbw-87-gFt" firstAttribute="trailing" secondItem="PkM-0g-TFq" secondAttribute="trailing" constant="20" id="kcD-F6-VIR"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="jTQ-UN-Ksm"/>
                     <connections>
                         <outlet property="email" destination="RjK-p2-V7p" id="lgS-HW-u6O"/>
                         <outlet property="loginBtn" destination="MVn-h8-jrj" id="gP4-sG-jGu"/>
@@ -111,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNc-Oe-87g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790" y="-2"/>
+            <point key="canvasLocation" x="1305" y="-2"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="EAY-U4-qTQ">
@@ -222,9 +223,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mcq-p3-hCu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1486" y="-2"/>
+            <point key="canvasLocation" x="1999" y="-2"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Account-->
         <scene sceneID="e4f-gm-IhW">
             <objects>
                 <viewController storyboardIdentifier="MainViewController" id="x9I-qd-E1F" customClass="MainViewController" customModule="LilyTalk" customModuleProvider="target" sceneMemberID="viewController">
@@ -234,10 +235,62 @@
                         <viewLayoutGuide key="safeArea" id="KSi-wV-0nD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="ic_account" id="PwC-VD-Pz0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEv-IE-2Oz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160" y="-2"/>
+            <point key="canvasLocation" x="3582" y="-777"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="iat-Jj-vgC">
+            <objects>
+                <viewController id="Qif-3t-eES" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v1C-5Q-NZK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oqf-kg-iHg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="ic_chat" id="NXq-VC-0nd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKg-VB-azX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3581" y="619"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Baw-el-Y3Q">
+            <objects>
+                <tabBarController storyboardIdentifier="MainViewTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="CTs-BX-21b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KMy-dp-G37">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="x9I-qd-E1F" kind="relationship" relationship="viewControllers" id="BHq-Wz-JpD"/>
+                        <segue destination="YRg-IZ-q9I" kind="relationship" relationship="viewControllers" id="XSx-TP-DGI"/>
+                        <segue destination="Qif-3t-eES" kind="relationship" relationship="viewControllers" id="gBV-dB-8Hs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aA5-Vf-APU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2811" y="-2"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="tK6-5D-p8l">
+            <objects>
+                <viewController id="YRg-IZ-q9I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b22-Kn-sen">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wYY-Gd-ySd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="People" image="ic_people" id="B11-Up-lIo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83H-9g-CXP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3628" y="-108"/>
         </scene>
     </scenes>
     <designables>
@@ -258,8 +311,11 @@
         </designable>
     </designables>
     <resources>
+        <image name="ic_account" width="48" height="48"/>
         <image name="ic_addPhoto" width="16" height="16"/>
+        <image name="ic_chat" width="48" height="48"/>
         <image name="ic_loading" width="512" height="512"/>
+        <image name="ic_people" width="48" height="48"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

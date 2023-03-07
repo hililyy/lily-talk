@@ -21,6 +21,7 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, UI
     
     let remoteConfig = RemoteConfig.remoteConfig()
     var color: String! = nil
+    var ref = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,6 +59,7 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     
     @objc func signupEvent() {
+
         
         Auth.auth().createUser(withEmail: email.text!, password: password.text!) { user, err in
             let uid = user?.user.uid
@@ -65,10 +67,10 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, UI
             
             let imageRef = Storage.storage().reference().child("userImages").child(uid!)
             
-            imageRef.putData(image!, metadata: nil) { (metadata, error) in
+            imageRef.putData(image!, metadata: nil) { data, error in
                 imageRef.downloadURL { (url, error) in
                     guard let downloadURL = url else { return }
-                    Database.database().reference().child("user").child(uid!).setValue(["userName" : self.name.text, "profileImageUrl" : downloadURL.absoluteString])
+                    self.ref.child("user").child(uid!).setValue(["userName": self.name.text!, "profileImageUrl": downloadURL.absoluteString])
                 }
             }
         }
