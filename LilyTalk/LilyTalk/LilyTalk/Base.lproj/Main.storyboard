@@ -46,7 +46,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="ILV-Qd-QrV"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -59,7 +59,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2M-Ah-qs3" customClass="JiroTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="0.0" y="58" width="353" height="45"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNc-Oe-87g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1305" y="-2"/>
+            <point key="canvasLocation" x="1424" y="-2"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="EAY-U4-qTQ">
@@ -131,7 +131,7 @@
                                             <constraint firstAttribute="height" constant="45" id="Got-Wc-NfL"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Soe-5G-Dlx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -147,7 +147,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="P4B-4r-GgN"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -163,7 +163,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="2Cc-Cw-1jX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -223,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mcq-p3-hCu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1999" y="-2"/>
+            <point key="canvasLocation" x="2117" y="-2"/>
         </scene>
         <!--Account-->
         <scene sceneID="e4f-gm-IhW">
@@ -268,7 +268,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="x9I-qd-E1F" kind="relationship" relationship="viewControllers" id="BHq-Wz-JpD"/>
-                        <segue destination="YRg-IZ-q9I" kind="relationship" relationship="viewControllers" id="XSx-TP-DGI"/>
+                        <segue destination="ldJ-xy-EAU" kind="relationship" relationship="viewControllers" id="XSx-TP-DGI"/>
                         <segue destination="Qif-3t-eES" kind="relationship" relationship="viewControllers" id="gBV-dB-8Hs"/>
                     </connections>
                 </tabBarController>
@@ -276,7 +276,7 @@
             </objects>
             <point key="canvasLocation" x="2811" y="-2"/>
         </scene>
-        <!--People-->
+        <!--People View Controller-->
         <scene sceneID="tK6-5D-p8l">
             <objects>
                 <viewController storyboardIdentifier="PeopleViewController" id="YRg-IZ-q9I" customClass="PeopleViewController" customModule="LilyTalk" customModuleProvider="target" sceneMemberID="viewController">
@@ -286,28 +286,62 @@
                         <viewLayoutGuide key="safeArea" id="wYY-Gd-ySd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="People" image="ic_people" id="B11-Up-lIo"/>
+                    <navigationItem key="navigationItem" id="d5W-a1-ix7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83H-9g-CXP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3628" y="-108"/>
+            <point key="canvasLocation" x="4553.4351145038163" y="-108.45070422535211"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1sf-ml-KmX">
+            <objects>
+                <viewController storyboardIdentifier="ChatViewController" id="lqt-1H-2bc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nig-of-xQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eBK-5K-emP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0r4-d1-J2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5285" y="-108"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="7Ww-py-tB4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ldJ-xy-EAU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="People" image="ic_people" id="B11-Up-lIo"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZWk-kg-XxY">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YRg-IZ-q9I" kind="relationship" relationship="rootViewController" id="0CS-Mb-0wR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INB-dw-Fh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3626.7175572519081" y="-108.45070422535211"/>
         </scene>
     </scenes>
     <designables>
         <designable name="8Tt-jt-nHC">
-            <size key="intrinsicContentSize" width="108" height="34"/>
+            <size key="intrinsicContentSize" width="84" height="34"/>
         </designable>
         <designable name="RjK-p2-V7p">
-            <size key="intrinsicContentSize" width="73.666666666666671" height="34"/>
+            <size key="intrinsicContentSize" width="60" height="34"/>
         </designable>
         <designable name="Uyp-YU-2Iv">
-            <size key="intrinsicContentSize" width="73.666666666666671" height="34"/>
+            <size key="intrinsicContentSize" width="60" height="34"/>
         </designable>
         <designable name="cw5-f8-ani">
-            <size key="intrinsicContentSize" width="77" height="34"/>
+            <size key="intrinsicContentSize" width="62.333333333333336" height="34"/>
         </designable>
         <designable name="t2M-Ah-qs3">
-            <size key="intrinsicContentSize" width="108" height="34"/>
+            <size key="intrinsicContentSize" width="84" height="34"/>
         </designable>
     </designables>
     <resources>

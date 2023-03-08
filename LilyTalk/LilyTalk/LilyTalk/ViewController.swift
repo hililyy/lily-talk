@@ -57,12 +57,12 @@ class ViewController: UIViewController {
             self.present(alert, animated: true)
         } else {
             let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            loginVC.modalPresentationStyle = .fullScreen
             self.present(loginVC, animated: false)
         }
         self.view.backgroundColor = UIColor(hex: color!)
     }
 }
-
 
 extension UIColor {
     convenience init(hex: String) {

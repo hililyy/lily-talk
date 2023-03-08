@@ -59,8 +59,6 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     
     @objc func signupEvent() {
-
-        
         Auth.auth().createUser(withEmail: email.text!, password: password.text!) { user, err in
             let uid = user?.user.uid
             let image = self.imageView.image!.jpegData(compressionQuality: 0.1)
@@ -70,7 +68,11 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, UI
             imageRef.putData(image!, metadata: nil) { data, error in
                 imageRef.downloadURL { (url, error) in
                     guard let downloadURL = url else { return }
-                    self.ref.child("user").child(uid!).setValue(["userName": self.name.text!, "profileImageUrl": downloadURL.absoluteString])
+                    self.ref.child("user").child(uid!).setValue(["userName": self.name.text!, "profileImageUrl": downloadURL.absoluteString]) { err, ref in
+                        if err == nil {
+                            self.cancelEvent()
+                        }
+                    }
                 }
             }
         }

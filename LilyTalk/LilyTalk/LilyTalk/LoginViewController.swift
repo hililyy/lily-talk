@@ -45,6 +45,7 @@ class LoginViewController: UIViewController {
     
     @objc func presentSingup() {
         let view = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
+        view.modalPresentationStyle = .fullScreen
         self.present(view, animated: true)
     }
     
