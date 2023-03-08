@@ -263,6 +263,7 @@
                 <tabBarController storyboardIdentifier="MainViewTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="CTs-BX-21b" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KMy-dp-G37">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -321,17 +322,41 @@
                                     <constraint firstAttribute="height" constant="45" id="aJB-iu-84e"/>
                                 </constraints>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RJy-KM-ihS">
+                                <rect key="frame" x="0.0" y="59" width="393" height="684"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" rowHeight="70" id="A5f-ia-M2Q">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A5f-ia-M2Q" id="c19-tV-d2e">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lqt-1H-2bc" id="tct-FN-oCe"/>
+                                    <outlet property="delegate" destination="lqt-1H-2bc" id="Hke-Z4-L3E"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eBK-5K-emP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nmZ-ET-6li" firstAttribute="leading" secondItem="eBK-5K-emP" secondAttribute="leading" constant="10" id="GOd-bg-T9a"/>
+                            <constraint firstItem="eBK-5K-emP" firstAttribute="trailing" secondItem="RJy-KM-ihS" secondAttribute="trailing" id="Gyx-iG-8kQ"/>
+                            <constraint firstItem="nmZ-ET-6li" firstAttribute="top" secondItem="RJy-KM-ihS" secondAttribute="bottom" id="SZB-EV-0RC"/>
                             <constraint firstItem="eBK-5K-emP" firstAttribute="trailing" secondItem="nmZ-ET-6li" secondAttribute="trailing" constant="10" id="cy8-aR-3dq"/>
+                            <constraint firstItem="RJy-KM-ihS" firstAttribute="top" secondItem="eBK-5K-emP" secondAttribute="top" id="iRj-8w-oGO"/>
                             <constraint firstItem="eBK-5K-emP" firstAttribute="bottom" secondItem="nmZ-ET-6li" secondAttribute="bottom" constant="30" id="t7Y-mh-soy"/>
+                            <constraint firstItem="RJy-KM-ihS" firstAttribute="leading" secondItem="eBK-5K-emP" secondAttribute="leading" id="u08-yK-R6a"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chatTableView" destination="RJy-KM-ihS" id="O7C-Z8-ODQ"/>
                         <outlet property="sendBtn" destination="ncX-Y6-1Zu" id="sbD-el-l6M"/>
+                        <outlet property="textFieldMessage" destination="9xj-ab-5PR" id="8BN-9k-kXE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0r4-d1-J2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
