@@ -12,7 +12,8 @@
 		2A33EAB629B7B4E60043DAF2 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A33EAB529B7B4E60043DAF2 /* RemoteConfigDefaults.plist */; };
 		2A33EAB829B7B83D0043DAF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33EAB729B7B83D0043DAF2 /* LoginViewController.swift */; };
 		2A33EABA29B7BD7E0043DAF2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33EAB929B7BD7E0043DAF2 /* SignupViewController.swift */; };
-		2A33EABC29B7DE9D0043DAF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33EABB29B7DE9D0043DAF2 /* MainViewController.swift */; };
+		2A33EABC29B7DE9D0043DAF2 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33EABB29B7DE9D0043DAF2 /* PeopleViewController.swift */; };
+		2A33EAC129B7E9A00043DAF2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33EAC029B7E9A00043DAF2 /* UserModel.swift */; };
 		2AFC922C29B5F828003A35CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC922B29B5F828003A35CE /* AppDelegate.swift */; };
 		2AFC922E29B5F828003A35CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC922D29B5F828003A35CE /* SceneDelegate.swift */; };
 		2AFC923029B5F828003A35CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC922F29B5F828003A35CE /* ViewController.swift */; };
@@ -28,7 +29,8 @@
 		2A33EAB529B7B4E60043DAF2 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		2A33EAB729B7B83D0043DAF2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2A33EAB929B7BD7E0043DAF2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		2A33EABB29B7DE9D0043DAF2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2A33EABB29B7DE9D0043DAF2 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		2A33EAC029B7E9A00043DAF2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2AFC922829B5F828003A35CE /* LilyTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LilyTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFC922B29B5F828003A35CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AFC922D29B5F828003A35CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,10 +76,11 @@
 			isa = PBXGroup;
 			children = (
 				2AFC922B29B5F828003A35CE /* AppDelegate.swift */,
-				2A33EABB29B7DE9D0043DAF2 /* MainViewController.swift */,
+				2A33EABB29B7DE9D0043DAF2 /* PeopleViewController.swift */,
 				2AFC922D29B5F828003A35CE /* SceneDelegate.swift */,
 				2AFC922F29B5F828003A35CE /* ViewController.swift */,
 				2AFC923129B5F829003A35CE /* Main.storyboard */,
+				2A33EAC029B7E9A00043DAF2 /* UserModel.swift */,
 				2A33EAB929B7BD7E0043DAF2 /* SignupViewController.swift */,
 				2A33EAB729B7B83D0043DAF2 /* LoginViewController.swift */,
 				2AFC923429B5F82A003A35CE /* Assets.xcassets */,
@@ -224,9 +227,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A33EAB829B7B83D0043DAF2 /* LoginViewController.swift in Sources */,
+				2A33EAC129B7E9A00043DAF2 /* UserModel.swift in Sources */,
 				2AFC923029B5F828003A35CE /* ViewController.swift in Sources */,
 				2A33EABA29B7BD7E0043DAF2 /* SignupViewController.swift in Sources */,
-				2A33EABC29B7DE9D0043DAF2 /* MainViewController.swift in Sources */,
+				2A33EABC29B7DE9D0043DAF2 /* PeopleViewController.swift in Sources */,
 				2AFC922C29B5F828003A35CE /* AppDelegate.swift in Sources */,
 				2AFC922E29B5F828003A35CE /* SceneDelegate.swift in Sources */,
 			);

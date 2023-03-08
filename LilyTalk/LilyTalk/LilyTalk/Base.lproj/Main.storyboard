@@ -279,7 +279,7 @@
         <!--People-->
         <scene sceneID="tK6-5D-p8l">
             <objects>
-                <viewController id="YRg-IZ-q9I" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PeopleViewController" id="YRg-IZ-q9I" customClass="PeopleViewController" customModule="LilyTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b22-Kn-sen">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
