@@ -68,7 +68,7 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, UI
             imageRef.putData(image!, metadata: nil) { data, error in
                 imageRef.downloadURL { (url, error) in
                     guard let downloadURL = url else { return }
-                    self.ref.child("user").child(uid!).setValue(["userName": self.name.text!, "profileImageUrl": downloadURL.absoluteString]) { err, ref in
+                    self.ref.child("user").child(uid!).setValue(["userName": self.name.text!, "profileImageUrl": downloadURL.absoluteString, "uid":Auth.auth().currentUser?.uid] ) { err, ref in
                         if err == nil {
                             self.cancelEvent()
                         }

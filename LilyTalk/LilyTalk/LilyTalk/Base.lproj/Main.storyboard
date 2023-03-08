@@ -292,16 +292,47 @@
             </objects>
             <point key="canvasLocation" x="4553.4351145038163" y="-108.45070422535211"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="1sf-ml-KmX">
             <objects>
-                <viewController storyboardIdentifier="ChatViewController" id="lqt-1H-2bc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" id="lqt-1H-2bc" customClass="ChatViewController" customModule="LilyTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nig-of-xQZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nmZ-ET-6li">
+                                <rect key="frame" x="10" y="743" width="373" height="45"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9xj-ab-5PR">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncX-Y6-1Zu">
+                                        <rect key="frame" x="298" y="0.0" width="75" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="YMo-TY-8mq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="전송"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="aJB-iu-84e"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="eBK-5K-emP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nmZ-ET-6li" firstAttribute="leading" secondItem="eBK-5K-emP" secondAttribute="leading" constant="10" id="GOd-bg-T9a"/>
+                            <constraint firstItem="eBK-5K-emP" firstAttribute="trailing" secondItem="nmZ-ET-6li" secondAttribute="trailing" constant="10" id="cy8-aR-3dq"/>
+                            <constraint firstItem="eBK-5K-emP" firstAttribute="bottom" secondItem="nmZ-ET-6li" secondAttribute="bottom" constant="30" id="t7Y-mh-soy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sendBtn" destination="ncX-Y6-1Zu" id="sbD-el-l6M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0r4-d1-J2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
