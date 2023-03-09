@@ -18,7 +18,7 @@ class PeopleViewController: UIViewController {
         peopleTableView = UITableView()
         peopleTableView.delegate = self
         peopleTableView.dataSource = self
-        peopleTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        peopleTableView.register(PeopleViewTableCell.self, forCellReuseIdentifier: "Cell")
         view.addSubview(peopleTableView)
         peopleTableView.snp.makeConstraints { make in
             make.top.equalTo(view)
@@ -54,9 +54,8 @@ extension PeopleViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = peopleTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let imageView = UIImageView()
-        cell.addSubview(imageView)
+        let cell = peopleTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PeopleViewTableCell
+        let imageView = cell.imageview!
         imageView.snp.makeConstraints { make in
             make.centerY.equalTo(cell)
             make.left.equalTo(cell).offset(10)
@@ -71,8 +70,7 @@ extension PeopleViewController: UITableViewDelegate, UITableViewDataSource {
             }
         }.resume()
         
-        let label = UILabel()
-        cell.addSubview(label)
+        let label = cell.label!
         label.snp.makeConstraints { make in
             make.centerY.equalTo(cell)
             make.left.equalTo(imageView.snp.right).offset(20)
@@ -89,5 +87,20 @@ extension PeopleViewController: UITableViewDelegate, UITableViewDataSource {
         let view = self.storyboard?.instantiateViewController(withIdentifier: "ChatViewController") as? ChatViewController
         view?.destinationUid = self.array[indexPath.row].uid
         self.navigationController?.pushViewController(view!, animated: true)
+    }
+}
+
+class PeopleViewTableCell: UITableViewCell {
+    var imageview: UIImageView! = UIImageView()
+    var label: UILabel! = UILabel()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.addSubview(imageview)
+        self.addSubview(label)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
